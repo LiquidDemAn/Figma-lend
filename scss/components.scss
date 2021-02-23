@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'Graphik';
+    src: local('Graphik Medium'), local('Graphik-Medium'),
+        url('/fonts/Graphik-Medium.woff2') format('woff2'),
+        url('/fonts/Graphik-Medium.woff') format('woff'),
+        url('/fonts/Graphik-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }
+$blue:#4452FE;
+body{
+    font-family: 'Graphik';
+}
+.link{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+}
+.title{
+    font-size: 52px;
+    line-height: 62px;
+    text-align: center;
+    color: #fff;
+}
+.subtitle{
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+    text-align: center;
+    color: #fff;
+}
+.text{
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #fff;
+}
+.btn{
+    background: none;
+    color: #fff;
+    border: 1px solid #fff;
+    cursor: pointer;
+    transition: background 0.2s ease-in, border 0.2s ease-in;
+
+    &:hover{
+        background-color: $blue;
+        border: 1px solid $blue;
+        transition: 0.2s ease-in;
+    }
+}
