@@ -7,7 +7,9 @@
     font-weight: 500;
     font-style: normal;
   }
+
 $blue:#4452FE;
+
 body{
     font-family: 'Graphik';
 }
@@ -49,4 +51,26 @@ body{
         border: 1px solid $blue;
         transition: 0.2s ease-in;
     }
+}
+.contents,
+.gallery,
+.partners,
+.testimonials {
+    padding-top: 160px;
+    background-color: #181818;
+}
+
+.contents__title,
+.gallery__title,
+.partners__title,
+.features__title,
+.testimonials__title {
+    margin-bottom: 25px;
+}
+.contents__subtitle,
+.gallery__subtitle,
+.partners__subtitle,
+.features__subtitle {
+    max-width: 590px;
+    margin: 0 auto 50px auto;
 }
