@@ -13,6 +13,15 @@ $blue:#4452FE;
 body{
     font-family: 'Graphik';
 }
+.header,
+.gallery,
+.footer,
+.testimonials,
+.partners,
+.features,
+.contents{
+    padding: 0 15px;
+}
 .link{
     font-size: 16px;
     line-height: 24px;
@@ -21,21 +30,21 @@ body{
     text-decoration: none;
 }
 .title{
-    font-size: 52px;
-    line-height: 62px;
+    font-size: 36px;
+    line-height: 48px;
     text-align: center;
     color: #fff;
 }
-.subtitle{
-    font-size: 20px;
-    line-height: 30px;
+.subtitle {
+    font-size: 18px;
+    line-height: 24px;
     letter-spacing: 0.2px;
     text-align: center;
     color: #fff;
 }
 .text{
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 14px;
+    line-height: 20px;
     letter-spacing: 0.2px;
     color: #fff;
 }
@@ -56,7 +65,7 @@ body{
 .gallery,
 .partners,
 .testimonials {
-    padding-top: 160px;
+    padding-top: 50px;
     background-color: #181818;
 }
 
@@ -72,5 +81,42 @@ body{
 .partners__subtitle,
 .features__subtitle {
     max-width: 590px;
-    margin: 0 auto 50px auto;
+    margin: 0 auto 25px auto;
 }
+@media (min-width: 576px) {
+    .contents,
+    .gallery,
+    .partners,
+    .testimonials {
+        padding-top: 100px;
+    }
+    .title{
+        font-size: 52px;
+        line-height: 62px;
+    }
+    .text {
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.2px;
+        color: #fff;
+    }
+}
+@media (min-width: 768px) {
+    .contents,
+    .gallery,
+    .partners,
+    .testimonials {
+        padding-top: 160px;
+    }
+    .subtitle{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .contents__subtitle,
+    .gallery__subtitle,
+    .partners__subtitle,
+    .features__subtitle {
+        margin: 0 auto 50px auto;
+    }
+}
+
